@@ -1,0 +1,6 @@
+{
+  "watch": ["**/*"],
+  "ignore": ["dist", "node_modules", "tests"],
+  "ext": "ts",
+  "exec": "ts-node ./bin/www"
+}

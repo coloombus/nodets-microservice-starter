@@ -1,0 +1,43 @@
+{
+  "name": "nodets-microservice-starter",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development nodemon",
+    "prewatch": "npm run lint",
+    "serve": "cross-env NODE_ENV=production node ./bin/www",
+    "preserve": "npm run build",
+    "build": "tsc",
+    "prebuild": "npm run lint",
+    "lint": "tslint -c tslint.json -p tsconfig.json --fix",
+    "test": "npm run test:unit && npm run test:feature",
+    "test:unit": "mocha --require ts-node/register tests/unit/**/*.ts",
+    "test:feature": "mocha --require ts-node/register tests/feature/**/*.ts"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "moment": "^2.24.0",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.30",
+    "@types/chai": "^4.2.9",
+    "@types/chai-http": "^4.2.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.2",
+    "@types/mocha": "^7.0.1",
+    "@types/morgan": "^1.7.37",
+    "@types/node": "^13.7.1",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cross-env": "^7.0.0",
+    "mocha": "^7.0.1",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
+  }
+}
