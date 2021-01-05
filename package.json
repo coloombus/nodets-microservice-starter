@@ -15,7 +15,7 @@
     "test:feature": "mocha --require ts-node/register tests/feature/**/*.ts"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "debug": "~2.6.9",
     "dotenv": "^8.2.0",
     "express": "~4.16.1",
